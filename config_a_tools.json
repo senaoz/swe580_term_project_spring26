@@ -3,26 +3,26 @@
     "type": "function",
     "function": {
       "name": "search_notes",
-      "description": "Search notes in the vault.",
+      "description": "Search notes by content, tags, and/or date range. All parameters are optional and combinable — the backend applies all provided filters with AND logic. Use this for content search, tag filtering, date filtering, or any combination. Returns up to 10 results.",
       "parameters": {
         "type": "object",
         "properties": {
           "query": {
             "type": "string",
-            "description": "Text to search for."
+            "description": "Full-text search query over note content and titles. E.g. 'gradient descent', 'attention mechanisms', 'Docker containers'."
           },
           "tags": {
             "type": "array",
             "items": {"type": "string"},
-            "description": "Filter by tags."
+            "description": "Filter by tags (AND logic — note must have ALL listed tags). Tags are lowercase single words from note frontmatter. Valid tags include: attention, transformer, deep-learning, nlp, python, project, optimization, math, graph-ml, reference, meeting, reading-group. E.g. [\"python\"] or [\"nlp\", \"python\"]."
           },
           "date_from": {
             "type": "string",
-            "description": "Start date in YYYY-MM-DD format."
+            "description": "Start of date range (inclusive), format YYYY-MM-DD. E.g. '2026-01-10'. For 'after Jan 8' use '2026-01-09'. For 'on Jan 15' use '2026-01-15'."
           },
           "date_to": {
             "type": "string",
-            "description": "End date in YYYY-MM-DD format."
+            "description": "End of date range (inclusive), format YYYY-MM-DD. E.g. '2026-01-31'. For 'before Jan 8' use '2026-01-07'. For 'on Jan 15' use '2026-01-15'."
           }
         },
         "required": []
@@ -33,17 +33,17 @@
     "type": "function",
     "function": {
       "name": "get_note",
-      "description": "Retrieve a specific note by path or title.",
+      "description": "Retrieve the full content of a specific note by its title or file path. Use this for direct lookups like 'get the note titled X' or 'show me X'. Provide either title or path, not both.",
       "parameters": {
         "type": "object",
         "properties": {
-          "path": {
-            "type": "string",
-            "description": "File path of the note."
-          },
           "title": {
             "type": "string",
-            "description": "Title of the note."
+            "description": "Note title derived from filename: remove folder prefix and .md extension, replace underscores with spaces. E.g. 'Transformers', 'Python Tips', 'Attention Mechanisms', 'Reinforcement Learning', 'Chatbot Prototype'."
+          },
+          "path": {
+            "type": "string",
+            "description": "Relative file path from vault root. E.g. 'research/Transformers.md', 'reference/Python_Tips.md', 'projects/Chatbot_Prototype.md'."
           }
         },
         "required": []
@@ -54,22 +54,22 @@
     "type": "function",
     "function": {
       "name": "get_related_notes",
-      "description": "Find notes connected to a specific note through links.",
+      "description": "Find notes connected to a specific note through wiki-style [[links]]. Use for graph and link-based queries. 'incoming' = notes that link TO this note (backlinks). 'outgoing' = notes this note links TO. 'both' = all connected notes. Returns up to 10 results per direction.",
       "parameters": {
         "type": "object",
         "properties": {
-          "path": {
-            "type": "string",
-            "description": "File path of the note."
-          },
           "title": {
             "type": "string",
-            "description": "Title of the note."
+            "description": "Title of the note to find connections for. E.g. 'Transformers', 'Attention Mechanisms', 'Paper Recommender'. Strip descriptive words like 'research' or 'project' — use only the note's actual title."
+          },
+          "path": {
+            "type": "string",
+            "description": "File path of the note. E.g. 'research/Transformers.md'. Use instead of title if you already have the path."
           },
           "direction": {
             "type": "string",
             "enum": ["outgoing", "incoming", "both"],
-            "description": "Which links to return.",
+            "description": "'incoming': notes that link TO this note — use for 'what references X?' or 'what links to X?'. 'outgoing': notes this note links TO — use for 'what does X reference?' or 'what does X build upon?'. 'both': all connected notes — use for 'what is connected to X?'.",
             "default": "both"
           }
         },
@@ -81,7 +81,7 @@
     "type": "function",
     "function": {
       "name": "get_vault_overview",
-      "description": "Get vault statistics and recent notes.",
+      "description": "Get vault statistics (total notes, folder counts, all tags) and the 5 most recently modified notes. Use only when the query asks about vault contents, statistics, or recent activity.",
       "parameters": {
         "type": "object",
         "properties": {},

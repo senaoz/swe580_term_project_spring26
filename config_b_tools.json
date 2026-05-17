@@ -3,13 +3,13 @@
     "type": "function",
     "function": {
       "name": "search_by_content",
-      "description": "Search notes by text content.",
+      "description": "Full-text search over note content and titles. Use when the query asks about what notes discuss or mention a topic. Returns up to 10 results ranked by relevance.",
       "parameters": {
         "type": "object",
         "properties": {
           "query": {
             "type": "string",
-            "description": "Text query to search for."
+            "description": "Text to search for in note content and titles. E.g. 'gradient descent', 'attention mechanisms', 'Docker containers', 'BERT'."
           }
         },
         "required": ["query"]
@@ -20,14 +20,14 @@
     "type": "function",
     "function": {
       "name": "search_by_tags",
-      "description": "Search notes by tags.",
+      "description": "Find notes that have ALL the specified tags (AND logic). Use when the query filters by tag or category. Returns up to 10 results. Valid tags (lowercase): attention, transformer, deep-learning, nlp, python, project, optimization, math, graph-ml, reference, meeting, reading-group.",
       "parameters": {
         "type": "object",
         "properties": {
           "tags": {
             "type": "array",
             "items": {"type": "string"},
-            "description": "List of tags to filter by."
+            "description": "List of tags the note must have (all of them). Tags are lowercase single words. E.g. [\"python\"] for python notes, [\"nlp\", \"python\"] for notes tagged with both nlp and python, [\"python\", \"reference\"] for reference notes tagged python."
           }
         },
         "required": ["tags"]
@@ -38,17 +38,17 @@
     "type": "function",
     "function": {
       "name": "search_by_date",
-      "description": "Search notes by creation date range.",
+      "description": "Find notes by creation date range. Use for temporal queries like 'notes from January 2026' or 'notes created before X'. Returns up to 10 results. The result objects include a 'tags' field — use it to filter by tag when combining with a tag constraint.",
       "parameters": {
         "type": "object",
         "properties": {
           "date_from": {
             "type": "string",
-            "description": "Start date in YYYY-MM-DD format."
+            "description": "Start of date range (inclusive), format YYYY-MM-DD. E.g. '2026-01-10'. For 'after Jan 8' use '2026-01-09'. For a single day use the same value as date_to."
           },
           "date_to": {
             "type": "string",
-            "description": "End date in YYYY-MM-DD format."
+            "description": "End of date range (inclusive), format YYYY-MM-DD. E.g. '2026-01-31'. For 'before Jan 8' use '2026-01-07'. For a single day use the same value as date_from."
           }
         },
         "required": ["date_from", "date_to"]
@@ -59,13 +59,13 @@
     "type": "function",
     "function": {
       "name": "get_note_by_path",
-      "description": "Retrieve a note by its file path.",
+      "description": "Retrieve a note's full content by its exact file path. Use when you already know the path from a previous tool result.",
       "parameters": {
         "type": "object",
         "properties": {
           "path": {
             "type": "string",
-            "description": "File path of the note."
+            "description": "Relative file path from vault root. E.g. 'research/Transformers.md', 'reference/Python_Tips.md', 'projects/Chatbot_Prototype.md', 'daily/2026-01-15.md'."
           }
         },
         "required": ["path"]
@@ -76,13 +76,13 @@
     "type": "function",
     "function": {
       "name": "get_note_by_title",
-      "description": "Retrieve a note by its title.",
+      "description": "Retrieve a note's full content by its title. Title = filename without .md extension, underscores replaced by spaces. Use for direct lookups like 'get the note titled X' or 'show me X'.",
       "parameters": {
         "type": "object",
         "properties": {
           "title": {
             "type": "string",
-            "description": "Title of the note."
+            "description": "Note title derived from filename. Remove .md and replace underscores with spaces. E.g. 'Transformers', 'Python Tips', 'Attention Mechanisms', 'Reinforcement Learning', 'Chatbot Prototype', 'Paper Recommender'. Do NOT include folder name or descriptive words like 'research' or 'project'."
           }
         },
         "required": ["title"]
@@ -93,13 +93,13 @@
     "type": "function",
     "function": {
       "name": "get_outgoing_links",
-      "description": "Get notes that this note links to.",
+      "description": "Get notes that the given note links TO via [[wiki links]]. Use for queries like 'what does X reference?', 'what does X build upon?', 'what are the prerequisites of X?'. Returns up to 10 linked notes.",
       "parameters": {
         "type": "object",
         "properties": {
           "path": {
             "type": "string",
-            "description": "File path of the source note."
+            "description": "File path of the source note. E.g. 'research/Transformers.md', 'projects/Chatbot_Prototype.md'."
           }
         },
         "required": ["path"]
@@ -110,13 +110,13 @@
     "type": "function",
     "function": {
       "name": "get_incoming_links",
-      "description": "Get notes that link to this note.",
+      "description": "Get notes that link TO the given note (backlinks). Use for queries like 'what links to X?', 'what references X?', 'what notes are related to X?', 'what notes grew out of X?'. Returns up to 10 backlinks.",
       "parameters": {
         "type": "object",
         "properties": {
           "title": {
             "type": "string",
-            "description": "Title of the target note."
+            "description": "Title of the target note to find backlinks for. Use the exact note title (filename without .md, underscores as spaces). E.g. 'Transformers', 'Attention Mechanisms', 'Paper Recommender', 'CNN Architecture'. Do NOT add words like 'research' or 'project'."
           }
         },
         "required": ["title"]
@@ -127,7 +127,7 @@
     "type": "function",
     "function": {
       "name": "get_vault_stats",
-      "description": "Get vault statistics.",
+      "description": "Get vault statistics: total note count, breakdown by folder, and all unique tags. Use only when the query asks about vault contents or available tags.",
       "parameters": {
         "type": "object",
         "properties": {},
@@ -139,13 +139,13 @@
     "type": "function",
     "function": {
       "name": "get_recent_notes",
-      "description": "Get recently modified notes.",
+      "description": "Get the most recently modified notes, sorted by modification date descending. Use for queries like 'what did I work on recently?' or 'show me recent notes'.",
       "parameters": {
         "type": "object",
         "properties": {
           "limit": {
             "type": "integer",
-            "description": "Number of notes to return."
+            "description": "Number of notes to return (default 10, max 10)."
           }
         },
         "required": []
