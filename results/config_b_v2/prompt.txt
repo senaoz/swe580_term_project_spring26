@@ -42,21 +42,10 @@ For "prerequisite" or "what does X build on?" queries:
 - get_outgoing_links returns ALL links, including project notes.
 - Filter the results to research/ only when looking for foundational/prerequisite notes.
 
-## Tag + Content Queries
-
-For "tag X notes that mention Y" queries, do NOT intersect two capped searches.
-Instead: search_by_content("Y") first → from those results, keep only notes whose tags field contains X.
-This avoids the cap problem of search_by_tags.
-
 ## Graph + Folder Queries
 
 "Project notes related to X" → get_incoming_links(title: "X"), filter to projects/.
-For "related to attention research/attention mechanisms": call BOTH get_incoming_links(title: "Attention Mechanisms") AND get_incoming_links(title: "Transformers"), filter both to projects/, merge.
-
-## Folder-Restricted Content Queries
-
-"Meeting notes about BERT" → search_by_tags(["meeting"]) to get all meeting notes, then search_by_content("BERT"), intersect the two lists (keep paths in both).
-Do NOT rely on search_by_content alone for folder-restricted content queries — the cap fills with non-meeting notes first.
+For broad topics, also check incoming links of closely related notes (e.g. for attention research, also check Transformers).
 
 ## Output Format
 

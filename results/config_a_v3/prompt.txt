@@ -17,11 +17,10 @@ Titles come from filenames: underscores become spaces, .md is removed.
 
 ## Tags vs Folders
 
-Most folder names are NOT tags — except "reference" and "meeting" which are both folder names AND valid tags.
-Tags: attention, transformer, nlp, deep-learning, python, project, optimization, math, graph-ml, reference, meeting
+Folders (research, projects, meetings, daily, reference) are NOT tags.
+Tags are keywords in frontmatter: attention, transformer, nlp, deep-learning, python, project, optimization, math, graph-ml, reference, meeting
 
-To find notes in the reference/ folder tagged python: search_notes(tags: ["python", "reference"])
-Do NOT use research, projects, daily as tags — those are folder names only.
+Do NOT pass folder names as tags or as query text.
 
 ## Tool Usage
 

@@ -51,12 +51,7 @@ This avoids the cap problem of search_by_tags.
 ## Graph + Folder Queries
 
 "Project notes related to X" → get_incoming_links(title: "X"), filter to projects/.
-For "related to attention research/attention mechanisms": call BOTH get_incoming_links(title: "Attention Mechanisms") AND get_incoming_links(title: "Transformers"), filter both to projects/, merge.
-
-## Folder-Restricted Content Queries
-
-"Meeting notes about BERT" → search_by_tags(["meeting"]) to get all meeting notes, then search_by_content("BERT"), intersect the two lists (keep paths in both).
-Do NOT rely on search_by_content alone for folder-restricted content queries — the cap fills with non-meeting notes first.
+For broad "related to attention research" queries: also call get_incoming_links(title: "Transformers"), filter to projects/, merge both result sets.
 
 ## Output Format
 

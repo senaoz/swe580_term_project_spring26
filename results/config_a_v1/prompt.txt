@@ -17,11 +17,10 @@ Titles come from filenames: underscores become spaces, .md is removed.
 
 ## Tags vs Folders
 
-Most folder names are NOT tags — except "reference" and "meeting" which are both folder names AND valid tags.
-Tags: attention, transformer, nlp, deep-learning, python, project, optimization, math, graph-ml, reference, meeting
+Folders (research, projects, meetings, daily, reference) are NOT tags.
+Tags are keywords in frontmatter: attention, transformer, nlp, deep-learning, python, project, optimization, math, graph-ml
 
-To find notes in the reference/ folder tagged python: search_notes(tags: ["python", "reference"])
-Do NOT use research, projects, daily as tags — those are folder names only.
+Do NOT pass folder names as tags.
 
 ## Tool Usage
 
@@ -31,19 +30,6 @@ Do NOT use research, projects, daily as tags — those are folder names only.
   - "What links to X?" → direction: "incoming"
   - "What does X link to?" → direction: "outgoing"
 - get_vault_overview: vault statistics or recent activity only
-
-## Folder-Restricted Queries
-
-To find notes in a specific folder, search WITHOUT a folder-name query, then filter by path prefix:
-- "meeting notes from Jan 10–14" → search_notes(date_from: "2026-01-10", date_to: "2026-01-14") → keep only paths starting with "meetings/"
-- "meeting notes about BERT" → search_notes(query: "BERT") → keep only paths starting with "meetings/"
-Do NOT add folder names (meetings, research, etc.) as query text — it filters by content, not by folder.
-
-## Graph + Folder Queries
-
-"Project notes related to X" → use get_related_notes(title: "X", direction: "incoming"), filter to projects/.
-For broad "related to" queries (e.g. attention research), also check incoming links of closely related notes
-(e.g. if Attention Mechanisms is related to Transformers, check both).
 
 ## Output Format
 
