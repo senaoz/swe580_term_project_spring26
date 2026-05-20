@@ -6,7 +6,7 @@
 |---|---|
 | Tool configs | [config_a_tools.json](config_a_tools.json) · [config_b_tools.json](config_b_tools.json) |
 | System prompts | [config_a_prompt.txt](config_a_prompt.txt) · [config_b_prompt.txt](config_b_prompt.txt) |
-| Results | [results/final/config_a_best.json](results/final/config_a_best.json) · [results/final/config_b_best.json](results/final/config_b_best.json) |
+| Results | [/results](https://github.com/senaoz/swe580_term_project_spring26/tree/main/results) |
 | Report | [PDF](https://github.com/senaoz/swe580_term_project_spring26/blob/main/SWE%20580%20Term%20Project%20Report.pdf) |
 
 ---
