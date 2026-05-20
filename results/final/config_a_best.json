@@ -2,15 +2,15 @@
   "aggregate": {
     "config": "Config A (Coarse-Grained)",
     "total_queries": 25,
-    "exact_matches": 21,
-    "success_rate": 0.84,
-    "avg_precision": 0.9467,
-    "avg_recall": 0.9333,
-    "avg_f1": 0.936,
-    "avg_tool_calls": 1.12,
-    "avg_tokens": 4868.9,
-    "avg_latency": 1.424,
-    "total_tokens": 121723,
+    "exact_matches": 22,
+    "success_rate": 0.88,
+    "avg_precision": 0.96,
+    "avg_recall": 0.92,
+    "avg_f1": 0.932,
+    "avg_tool_calls": 1.08,
+    "avg_tokens": 3376.5,
+    "avg_latency": 1.541,
+    "total_tokens": 84412,
     "by_category": {
       "content_search": {
         "count": 2,
@@ -21,10 +21,10 @@
       },
       "graph_based": {
         "count": 7,
-        "exact_matches": 5,
-        "success_rate": 0.7143,
-        "avg_f1": 0.9429,
-        "avg_tool_calls": 1.43
+        "exact_matches": 6,
+        "success_rate": 0.8571,
+        "avg_f1": 0.9286,
+        "avg_tool_calls": 1.29
       },
       "multi_faceted": {
         "count": 9,
@@ -104,10 +104,10 @@
           "final_response": "RESULT_PATHS: [\"research/Transformers.md\"]"
         }
       ],
-      "total_input_tokens": 4464,
+      "total_input_tokens": 3053,
       "total_output_tokens": 26,
-      "total_tokens": 4490,
-      "latency_seconds": 2.652,
+      "total_tokens": 3079,
+      "latency_seconds": 2.837,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -162,10 +162,10 @@
           "final_response": "RESULT_PATHS: [\"reference/Python_Tips.md\"]"
         }
       ],
-      "total_input_tokens": 4410,
+      "total_input_tokens": 2999,
       "total_output_tokens": 29,
-      "total_tokens": 4439,
-      "latency_seconds": 0.887,
+      "total_tokens": 3028,
+      "latency_seconds": 1.053,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -223,10 +223,10 @@
           "final_response": "RESULT_PATHS: [\"research/Self_Attention.md\", \"research/Transformers.md\", \"research/Attention_Mechanisms.md\"]"
         }
       ],
-      "total_input_tokens": 4368,
+      "total_input_tokens": 2954,
       "total_output_tokens": 45,
-      "total_tokens": 4413,
-      "latency_seconds": 1.732,
+      "total_tokens": 2999,
+      "latency_seconds": 1.61,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -315,10 +315,10 @@
           "final_response": "RESULT_PATHS: [\"projects/Experiment_Tracker.md\", \"projects/Knowledge_Graph_Builder.md\", \"projects/Annotation_Tool.md\", \"projects/Sentiment_Analyzer.md\", \"projects/Paper_Recommender.md\", \"projects/Data_Pipeline.md\", \"projects/Text_Summarizer.md\", \"projects/Multilingual_Classifier.md\", \"projects/Chatbot_Prototype.md\", \"projects/RAG_System.md\"]"
         }
       ],
-      "total_input_tokens": 4966,
+      "total_input_tokens": 3552,
       "total_output_tokens": 117,
-      "total_tokens": 5083,
-      "latency_seconds": 1.301,
+      "total_tokens": 3669,
+      "latency_seconds": 1.856,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -343,8 +343,8 @@
         {
           "tool": "search_notes",
           "arguments": {
-            "date_from": "2026-01-15",
-            "date_to": "2026-01-15"
+            "date_to": "2026-01-15",
+            "date_from": "2026-01-15"
           }
         }
       ],
@@ -355,8 +355,8 @@
             {
               "tool": "search_notes",
               "arguments": {
-                "date_from": "2026-01-15",
-                "date_to": "2026-01-15"
+                "date_to": "2026-01-15",
+                "date_from": "2026-01-15"
               },
               "result_summary": [
                 "projects/Model_Dashboard.md",
@@ -371,10 +371,10 @@
           "final_response": "RESULT_PATHS: [\"projects/Model_Dashboard.md\", \"daily/2026-01-15.md\"]"
         }
       ],
-      "total_input_tokens": 4340,
+      "total_input_tokens": 2926,
       "total_output_tokens": 71,
-      "total_tokens": 4411,
-      "latency_seconds": 1.3,
+      "total_tokens": 2997,
+      "latency_seconds": 1.381,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -433,10 +433,10 @@
           "final_response": "RESULT_PATHS: [\"daily/2026-01-22.md\", \"daily/2026-01-20.md\", \"meetings/Lab_Standup_Jan22.md\", \"meetings/Collaboration_Meeting_Jan20.md\"]"
         }
       ],
-      "total_input_tokens": 4538,
+      "total_input_tokens": 3124,
       "total_output_tokens": 105,
-      "total_tokens": 4643,
-      "latency_seconds": 1.531,
+      "total_tokens": 3229,
+      "latency_seconds": 1.222,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -490,10 +490,10 @@
           "final_response": "RESULT_PATHS: [\"reference/Statistics_Basics.md\", \"research/CNN_Architecture.md\", \"research/Optimization_Methods.md\"]"
         }
       ],
-      "total_input_tokens": 4370,
+      "total_input_tokens": 2958,
       "total_output_tokens": 48,
-      "total_tokens": 4418,
-      "latency_seconds": 1.255,
+      "total_tokens": 3006,
+      "latency_seconds": 1.17,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -541,10 +541,10 @@
           "final_response": "RESULT_PATHS: [\"reference/Docker_Setup.md\"]"
         }
       ],
-      "total_input_tokens": 4205,
+      "total_input_tokens": 2787,
       "total_output_tokens": 29,
-      "total_tokens": 4234,
-      "latency_seconds": 1.07,
+      "total_tokens": 2816,
+      "latency_seconds": 1.457,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -566,14 +566,16 @@
         "research/Self_Attention.md",
         "research/Transformers.md"
       ],
-      "response": "RESULT_PATHS: [\"research/Self_Attention.md\", \"research/Attention_Mechanisms.md\", \"research/Transformers.md\"]",
+      "response": "RESULT_PATHS: [\"research/Self_Attention.md\", \"research/Transformers.md\", \"research/Attention_Mechanisms.md\"]",
       "tool_calls": [
         {
           "tool": "search_notes",
           "arguments": {
-            "date_to": "2026-01-31",
+            "tags": [
+              "attention"
+            ],
             "date_from": "2026-01-01",
-            "query": "attention"
+            "date_to": "2026-01-31"
           }
         }
       ],
@@ -584,21 +586,16 @@
             {
               "tool": "search_notes",
               "arguments": {
-                "date_to": "2026-01-31",
+                "tags": [
+                  "attention"
+                ],
                 "date_from": "2026-01-01",
-                "query": "attention"
+                "date_to": "2026-01-31"
               },
               "result_summary": [
                 "research/Self_Attention.md",
-                "research/Attention_Mechanisms.md",
-                "meetings/Paper_Reading_Group_Jan14.md",
-                "daily/2026-01-15.md",
                 "research/Transformers.md",
-                "meetings/Advisor_Meeting_Jan10.md",
-                "meetings/Thesis_Committee_Jan30.md",
-                "daily/2026-01-30.md",
-                "daily/2026-01-20.md",
-                "meetings/Advisor_Meeting_Jan24.md"
+                "research/Attention_Mechanisms.md"
               ]
             }
           ]
@@ -606,13 +603,13 @@
         {
           "round": 2,
           "tool_calls": [],
-          "final_response": "RESULT_PATHS: [\"research/Self_Attention.md\", \"research/Attention_Mechanisms.md\", \"research/Transformers.md\"]"
+          "final_response": "RESULT_PATHS: [\"research/Self_Attention.md\", \"research/Transformers.md\", \"research/Attention_Mechanisms.md\"]"
         }
       ],
-      "total_input_tokens": 5050,
+      "total_input_tokens": 2998,
       "total_output_tokens": 77,
-      "total_tokens": 5127,
-      "latency_seconds": 1.676,
+      "total_tokens": 3075,
+      "latency_seconds": 1.447,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -768,10 +765,10 @@
           "final_response": "RESULT_PATHS: [\"research/Graph_Neural_Networks.md\", \"research/Word_Embeddings.md\", \"research/Optimization_Methods.md\", \"research/Self_Attention.md\", \"research/GPT.md\", \"research/BERT.md\", \"research/Attention_Mechanisms.md\", \"research/Mixture_of_Experts.md\", \"research/Recurrent_Networks.md\", \"projects/Paper_Recommender.md\"]"
         }
       ],
-      "total_input_tokens": 4973,
+      "total_input_tokens": 3559,
       "total_output_tokens": 122,
-      "total_tokens": 5095,
-      "latency_seconds": 2.137,
+      "total_tokens": 3681,
+      "latency_seconds": 1.738,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -834,10 +831,10 @@
           "final_response": "RESULT_PATHS: [\"projects/Experiment_Tracker.md\", \"projects/Web_Scraper.md\", \"projects/Dataset_Cleaner.md\", \"reference/Python_Tips.md\"]"
         }
       ],
-      "total_input_tokens": 4489,
+      "total_input_tokens": 3072,
       "total_output_tokens": 72,
-      "total_tokens": 4561,
-      "latency_seconds": 1.72,
+      "total_tokens": 3144,
+      "latency_seconds": 1.319,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -894,10 +891,10 @@
           "final_response": "RESULT_PATHS: [\"research/CNN_Architecture.md\", \"research/Optimization_Methods.md\"]"
         }
       ],
-      "total_input_tokens": 4302,
+      "total_input_tokens": 2891,
       "total_output_tokens": 45,
-      "total_tokens": 4347,
-      "latency_seconds": 0.966,
+      "total_tokens": 2936,
+      "latency_seconds": 1.289,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -960,10 +957,10 @@
           "final_response": "RESULT_PATHS: [\"meetings/Lab_Standup_Jan12.md\", \"meetings/Paper_Reading_Group_Jan14.md\", \"meetings/Advisor_Meeting_Jan10.md\"]"
         }
       ],
-      "total_input_tokens": 5049,
+      "total_input_tokens": 3635,
       "total_output_tokens": 88,
-      "total_tokens": 5137,
-      "latency_seconds": 1.218,
+      "total_tokens": 3723,
+      "latency_seconds": 1.241,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -995,419 +992,12 @@
         "research/Transformers.md",
         "research/Word_Embeddings.md"
       ],
-      "response": "The following notes link to \"Attention Mechanisms\": \"Word Embeddings\", \"Self Attention\", \"Graph Neural Networks\", \"Transformers\", \"Diffusion Models\", \"Recurrent Networks\", \"Chatbot Prototype\", and \"Paper Reading Group Jan14\".\nRESULT_PATHS: [\"research/Word_Embeddings.md\", \"research/Self_Attention.md\", \"research/Graph_Neural_Networks.md\", \"research/Transformers.md\", \"research/Diffusion_Models.md\", \"research/Recurrent_Networks.md\", \"projects/Chatbot_Prototype.md\", \"meetings/Paper_Reading_Group_Jan14.md\"]",
-      "tool_calls": [
-        {
-          "tool": "get_related_notes",
-          "arguments": {
-            "direction": "incoming",
-            "title": "Attention Mechanisms"
-          }
-        }
-      ],
-      "trace": [
-        {
-          "round": 1,
-          "tool_calls": [
-            {
-              "tool": "get_related_notes",
-              "arguments": {
-                "direction": "incoming",
-                "title": "Attention Mechanisms"
-              },
-              "result_summary": {
-                "incoming": [
-                  {
-                    "path": "research/Word_Embeddings.md",
-                    "title": "Word Embeddings",
-                    "tags": "",
-                    "created": "2026-01-09T16:00:00",
-                    "modified": "2026-01-16T10:30:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/Self_Attention.md",
-                    "title": "Self Attention",
-                    "tags": "attention,transformer",
-                    "created": "2026-01-14T08:15:00",
-                    "modified": "2026-01-14T08:15:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/Graph_Neural_Networks.md",
-                    "title": "Graph Neural Networks",
-                    "tags": "deep-learning,graph-ml",
-                    "created": "2026-02-02T09:30:00",
-                    "modified": "2026-02-05T10:00:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/Transformers.md",
-                    "title": "Transformers",
-                    "tags": "transformer,attention,deep-learning",
-                    "created": "2026-01-10T09:30:00",
-                    "modified": "2026-01-18T14:22:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/Diffusion_Models.md",
-                    "title": "Diffusion Models",
-                    "tags": "deep-learning,generative-ai",
-                    "created": "2026-01-31T15:00:00",
-                    "modified": "2026-01-31T15:00:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/Recurrent_Networks.md",
-                    "title": "Recurrent Networks",
-                    "tags": "deep-learning,nlp",
-                    "created": "2026-01-24T09:30:00",
-                    "modified": "2026-01-24T09:30:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "projects/Chatbot_Prototype.md",
-                    "title": "Chatbot Prototype",
-                    "tags": "project,nlp",
-                    "created": "2026-01-13T14:00:00",
-                    "modified": "2026-01-21T10:30:00",
-                    "folder": "projects"
-                  },
-                  {
-                    "path": "meetings/Paper_Reading_Group_Jan14.md",
-                    "title": "Paper Reading Group Jan14",
-                    "tags": "meeting,reading-group",
-                    "created": "2026-01-14T16:00:00",
-                    "modified": "2026-01-14T17:00:00",
-                    "folder": "meetings"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "round": 2,
-          "tool_calls": [],
-          "final_response": "The following notes link to \"Attention Mechanisms\": \"Word Embeddings\", \"Self Attention\", \"Graph Neural Networks\", \"Transformers\", \"Diffusion Models\", \"Recurrent Networks\", \"Chatbot Prototype\", and \"Paper Reading Group Jan14\".\nRESULT_PATHS: [\"research/Word_Embeddings.md\", \"research/Self_Attention.md\", \"research/Graph_Neural_Networks.md\", \"research/Transformers.md\", \"research/Diffusion_Models.md\", \"research/Recurrent_Networks.md\", \"projects/Chatbot_Prototype.md\", \"meetings/Paper_Reading_Group_Jan14.md\"]"
-        }
-      ],
-      "total_input_tokens": 4819,
-      "total_output_tokens": 158,
-      "total_tokens": 4977,
-      "latency_seconds": 1.411,
-      "rounds": 2,
-      "num_tool_calls": 1,
-      "exact_match": true,
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0
-    },
-    {
-      "query_id": "q15",
-      "category": "multi_faceted",
-      "query": "Find notes tagged deep-learning that also mention neural networks",
-      "expected_notes": [
-        "research/Attention_Mechanisms.md",
-        "research/CNN_Architecture.md",
-        "research/Diffusion_Models.md",
-        "research/Graph_Neural_Networks.md",
-        "research/Optimization_Methods.md",
-        "research/Recurrent_Networks.md"
-      ],
-      "extracted_notes": [
-        "research/Attention_Mechanisms.md",
-        "research/CNN_Architecture.md",
-        "research/Diffusion_Models.md",
-        "research/Graph_Neural_Networks.md",
-        "research/Optimization_Methods.md",
-        "research/Recurrent_Networks.md"
-      ],
-      "response": "RESULT_PATHS: [\"research/Graph_Neural_Networks.md\", \"research/Recurrent_Networks.md\", \"research/CNN_Architecture.md\", \"research/Attention_Mechanisms.md\", \"research/Diffusion_Models.md\", \"research/Optimization_Methods.md\"]",
-      "tool_calls": [
-        {
-          "tool": "search_notes",
-          "arguments": {
-            "tags": [
-              "deep-learning"
-            ],
-            "query": "neural networks"
-          }
-        }
-      ],
-      "trace": [
-        {
-          "round": 1,
-          "tool_calls": [
-            {
-              "tool": "search_notes",
-              "arguments": {
-                "tags": [
-                  "deep-learning"
-                ],
-                "query": "neural networks"
-              },
-              "result_summary": [
-                "research/Graph_Neural_Networks.md",
-                "research/Recurrent_Networks.md",
-                "research/CNN_Architecture.md",
-                "research/Attention_Mechanisms.md",
-                "research/Diffusion_Models.md",
-                "research/Optimization_Methods.md"
-              ]
-            }
-          ]
-        },
-        {
-          "round": 2,
-          "tool_calls": [],
-          "final_response": "RESULT_PATHS: [\"research/Graph_Neural_Networks.md\", \"research/Recurrent_Networks.md\", \"research/CNN_Architecture.md\", \"research/Attention_Mechanisms.md\", \"research/Diffusion_Models.md\", \"research/Optimization_Methods.md\"]"
-        }
-      ],
-      "total_input_tokens": 4648,
-      "total_output_tokens": 85,
-      "total_tokens": 4733,
-      "latency_seconds": 1.128,
-      "rounds": 2,
-      "num_tool_calls": 1,
-      "exact_match": true,
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0
-    },
-    {
-      "query_id": "q16",
-      "category": "graph_based",
-      "query": "I want to deeply understand the Transformers note. What prerequisite topics does it reference and build upon?",
-      "expected_notes": [
-        "research/Attention_Mechanisms.md",
-        "research/Self_Attention.md"
-      ],
-      "extracted_notes": [
-        "projects/Paper_Recommender.md",
-        "research/Attention_Mechanisms.md",
-        "research/Self_Attention.md"
-      ],
-      "response": "The \"Transformers\" note references and builds upon \"Self Attention\" and \"Attention Mechanisms\". It also seems to be related to the \"Paper Recommender\" project, which might be an application of Transformers.\n\nRESULT_PATHS: [\"research/Self_Attention.md\", \"research/Attention_Mechanisms.md\", \"projects/Paper_Recommender.md\"]",
-      "tool_calls": [
-        {
-          "tool": "get_related_notes",
-          "arguments": {
-            "title": "Transformers",
-            "direction": "outgoing"
-          }
-        }
-      ],
-      "trace": [
-        {
-          "round": 1,
-          "tool_calls": [
-            {
-              "tool": "get_related_notes",
-              "arguments": {
-                "title": "Transformers",
-                "direction": "outgoing"
-              },
-              "result_summary": {
-                "outgoing": [
-                  {
-                    "path": "research/Self_Attention.md",
-                    "title": "Self Attention",
-                    "tags": "attention,transformer",
-                    "created": "2026-01-14T08:15:00",
-                    "modified": "2026-01-14T08:15:00",
-                    "folder": "research",
-                    "links": "Transformers,Attention_Mechanisms"
-                  },
-                  {
-                    "path": "research/Attention_Mechanisms.md",
-                    "title": "Attention Mechanisms",
-                    "tags": "attention,deep-learning",
-                    "created": "2026-01-12T11:00:00",
-                    "modified": "2026-01-20T16:45:00",
-                    "folder": "research",
-                    "links": "Transformers,Self_Attention"
-                  },
-                  {
-                    "path": "projects/Paper_Recommender.md",
-                    "title": "Paper Recommender",
-                    "tags": "project,python,machine-learning",
-                    "created": "2026-01-08T10:00:00",
-                    "modified": "2026-01-19T13:00:00",
-                    "folder": "projects",
-                    "links": "Web_Scraper,Dataset_Cleaner,Transformers,Experiment_Tracker"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "round": 2,
-          "tool_calls": [],
-          "final_response": "The \"Transformers\" note references and builds upon \"Self Attention\" and \"Attention Mechanisms\". It also seems to be related to the \"Paper Recommender\" project, which might be an application of Transformers.\n\nRESULT_PATHS: [\"research/Self_Attention.md\", \"research/Attention_Mechanisms.md\", \"projects/Paper_Recommender.md\"]"
-        }
-      ],
-      "total_input_tokens": 4449,
-      "total_output_tokens": 99,
-      "total_tokens": 4548,
-      "latency_seconds": 1.203,
-      "rounds": 2,
-      "num_tool_calls": 1,
-      "exact_match": false,
-      "precision": 0.6667,
-      "recall": 1.0,
-      "f1": 0.8
-    },
-    {
-      "query_id": "q17",
-      "category": "graph_based",
-      "query": "What notes in my vault are connected to my reinforcement learning research, either referencing it or being referenced by it?",
-      "expected_notes": [
-        "meetings/Advisor_Meeting_Jan17.md",
-        "meetings/Paper_Reading_Group_Feb10.md",
-        "meetings/Thesis_Committee_Jan30.md",
-        "research/CNN_Architecture.md",
-        "research/Federated_Learning.md",
-        "research/Optimization_Methods.md"
-      ],
-      "extracted_notes": [
-        "meetings/Advisor_Meeting_Jan17.md",
-        "meetings/Paper_Reading_Group_Feb10.md",
-        "meetings/Thesis_Committee_Jan30.md",
-        "research/CNN_Architecture.md",
-        "research/Federated_Learning.md",
-        "research/Optimization_Methods.md"
-      ],
-      "response": "RESULT_PATHS: [\"research/Optimization_Methods.md\", \"research/Federated_Learning.md\", \"research/CNN_Architecture.md\", \"meetings/Paper_Reading_Group_Feb10.md\", \"meetings/Thesis_Committee_Jan30.md\", \"meetings/Advisor_Meeting_Jan17.md\"]",
-      "tool_calls": [
-        {
-          "tool": "get_related_notes",
-          "arguments": {
-            "title": "Reinforcement Learning",
-            "direction": "both"
-          }
-        }
-      ],
-      "trace": [
-        {
-          "round": 1,
-          "tool_calls": [
-            {
-              "tool": "get_related_notes",
-              "arguments": {
-                "title": "Reinforcement Learning",
-                "direction": "both"
-              },
-              "result_summary": {
-                "outgoing": [
-                  {
-                    "path": "research/CNN_Architecture.md",
-                    "title": "CNN Architecture",
-                    "tags": "deep-learning,computer-vision",
-                    "created": "2026-01-08T10:00:00",
-                    "modified": "2026-01-15T11:30:00",
-                    "folder": "research",
-                    "links": "Reinforcement_Learning"
-                  }
-                ],
-                "incoming": [
-                  {
-                    "path": "research/Optimization_Methods.md",
-                    "title": "Optimization Methods",
-                    "tags": "deep-learning,optimization,math",
-                    "created": "2026-01-29T09:00:00",
-                    "modified": "2026-02-04T16:00:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/Federated_Learning.md",
-                    "title": "Federated Learning",
-                    "tags": "machine-learning,privacy",
-                    "created": "2026-02-06T11:00:00",
-                    "modified": "2026-02-06T11:00:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/CNN_Architecture.md",
-                    "title": "CNN Architecture",
-                    "tags": "deep-learning,computer-vision",
-                    "created": "2026-01-08T10:00:00",
-                    "modified": "2026-01-15T11:30:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "meetings/Paper_Reading_Group_Feb10.md",
-                    "title": "Paper Reading Group Feb10",
-                    "tags": "meeting,reading-group",
-                    "created": "2026-02-10T16:00:00",
-                    "modified": "2026-02-10T17:00:00",
-                    "folder": "meetings"
-                  },
-                  {
-                    "path": "meetings/Thesis_Committee_Jan30.md",
-                    "title": "Thesis Committee Jan30",
-                    "tags": "meeting,advisor,thesis",
-                    "created": "2026-01-30T10:00:00",
-                    "modified": "2026-01-30T11:30:00",
-                    "folder": "meetings"
-                  },
-                  {
-                    "path": "meetings/Advisor_Meeting_Jan17.md",
-                    "title": "Advisor Meeting Jan17",
-                    "tags": "meeting,advisor",
-                    "created": "2026-01-17T14:00:00",
-                    "modified": "2026-01-17T15:00:00",
-                    "folder": "meetings"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "round": 2,
-          "tool_calls": [],
-          "final_response": "RESULT_PATHS: [\"research/Optimization_Methods.md\", \"research/Federated_Learning.md\", \"research/CNN_Architecture.md\", \"meetings/Paper_Reading_Group_Feb10.md\", \"meetings/Thesis_Committee_Jan30.md\", \"meetings/Advisor_Meeting_Jan17.md\"]"
-        }
-      ],
-      "total_input_tokens": 4789,
-      "total_output_tokens": 97,
-      "total_tokens": 4886,
-      "latency_seconds": 1.246,
-      "rounds": 2,
-      "num_tool_calls": 1,
-      "exact_match": true,
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0
-    },
-    {
-      "query_id": "q18",
-      "category": "graph_based",
-      "query": "Which of my project notes grew out of or are related to my attention mechanism research?",
-      "expected_notes": [
-        "projects/Chatbot_Prototype.md",
-        "projects/Paper_Recommender.md",
-        "projects/Text_Summarizer.md"
-      ],
-      "extracted_notes": [
-        "projects/Chatbot_Prototype.md",
-        "projects/Paper_Recommender.md"
-      ],
-      "response": "Here are the project notes related to your attention mechanism research:\n\n* projects/Chatbot_Prototype.md\n* projects/Paper_Recommender.md\nRESULT_PATHS: [\"projects/Chatbot_Prototype.md\", \"projects/Paper_Recommender.md\"]",
+      "response": "Notes that link to \"Attention Mechanisms\" are: \"Word Embeddings\", \"Self Attention\", \"Graph Neural Networks\", \"Transformers\", \"Diffusion Models\", \"Recurrent Networks\", \"Chatbot Prototype\", and \"Paper Reading Group Jan14\".\nRESULT_PATHS: [\"research/Word_Embeddings.md\", \"research/Self_Attention.md\", \"research/Graph_Neural_Networks.md\", \"research/Transformers.md\", \"research/Diffusion_Models.md\", \"research/Recurrent_Networks.md\", \"projects/Chatbot_Prototype.md\", \"meetings/Paper_Reading_Group_Jan14.md\"]",
       "tool_calls": [
         {
           "tool": "get_related_notes",
           "arguments": {
             "title": "Attention Mechanisms",
-            "direction": "incoming"
-          }
-        },
-        {
-          "tool": "get_related_notes",
-          "arguments": {
-            "title": "Transformers",
             "direction": "incoming"
           }
         }
@@ -1490,37 +1080,342 @@
                   }
                 ]
               }
-            },
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "tool_calls": [],
+          "final_response": "Notes that link to \"Attention Mechanisms\" are: \"Word Embeddings\", \"Self Attention\", \"Graph Neural Networks\", \"Transformers\", \"Diffusion Models\", \"Recurrent Networks\", \"Chatbot Prototype\", and \"Paper Reading Group Jan14\".\nRESULT_PATHS: [\"research/Word_Embeddings.md\", \"research/Self_Attention.md\", \"research/Graph_Neural_Networks.md\", \"research/Transformers.md\", \"research/Diffusion_Models.md\", \"research/Recurrent_Networks.md\", \"projects/Chatbot_Prototype.md\", \"meetings/Paper_Reading_Group_Jan14.md\"]"
+        }
+      ],
+      "total_input_tokens": 3409,
+      "total_output_tokens": 159,
+      "total_tokens": 3568,
+      "latency_seconds": 1.5,
+      "rounds": 2,
+      "num_tool_calls": 1,
+      "exact_match": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "query_id": "q15",
+      "category": "multi_faceted",
+      "query": "Find notes tagged deep-learning that also mention neural networks",
+      "expected_notes": [
+        "research/Attention_Mechanisms.md",
+        "research/CNN_Architecture.md",
+        "research/Diffusion_Models.md",
+        "research/Graph_Neural_Networks.md",
+        "research/Optimization_Methods.md",
+        "research/Recurrent_Networks.md"
+      ],
+      "extracted_notes": [
+        "research/Attention_Mechanisms.md",
+        "research/CNN_Architecture.md",
+        "research/Diffusion_Models.md",
+        "research/Graph_Neural_Networks.md",
+        "research/Optimization_Methods.md",
+        "research/Recurrent_Networks.md"
+      ],
+      "response": "RESULT_PATHS: [\"research/Graph_Neural_Networks.md\", \"research/Recurrent_Networks.md\", \"research/CNN_Architecture.md\", \"research/Attention_Mechanisms.md\", \"research/Diffusion_Models.md\", \"research/Optimization_Methods.md\"]",
+      "tool_calls": [
+        {
+          "tool": "search_notes",
+          "arguments": {
+            "tags": [
+              "deep-learning"
+            ],
+            "query": "neural networks"
+          }
+        }
+      ],
+      "trace": [
+        {
+          "round": 1,
+          "tool_calls": [
+            {
+              "tool": "search_notes",
+              "arguments": {
+                "tags": [
+                  "deep-learning"
+                ],
+                "query": "neural networks"
+              },
+              "result_summary": [
+                "research/Graph_Neural_Networks.md",
+                "research/Recurrent_Networks.md",
+                "research/CNN_Architecture.md",
+                "research/Attention_Mechanisms.md",
+                "research/Diffusion_Models.md",
+                "research/Optimization_Methods.md"
+              ]
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "tool_calls": [],
+          "final_response": "RESULT_PATHS: [\"research/Graph_Neural_Networks.md\", \"research/Recurrent_Networks.md\", \"research/CNN_Architecture.md\", \"research/Attention_Mechanisms.md\", \"research/Diffusion_Models.md\", \"research/Optimization_Methods.md\"]"
+        }
+      ],
+      "total_input_tokens": 3237,
+      "total_output_tokens": 85,
+      "total_tokens": 3322,
+      "latency_seconds": 1.213,
+      "rounds": 2,
+      "num_tool_calls": 1,
+      "exact_match": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "query_id": "q16",
+      "category": "graph_based",
+      "query": "I want to deeply understand the Transformers note. What prerequisite topics does it reference and build upon?",
+      "expected_notes": [
+        "research/Attention_Mechanisms.md",
+        "research/Self_Attention.md"
+      ],
+      "extracted_notes": [
+        "research/Attention_Mechanisms.md",
+        "research/Self_Attention.md"
+      ],
+      "response": "RESULT_PATHS: [\"research/Self_Attention.md\", \"research/Attention_Mechanisms.md\"]",
+      "tool_calls": [
+        {
+          "tool": "get_related_notes",
+          "arguments": {
+            "title": "Transformers",
+            "direction": "outgoing"
+          }
+        }
+      ],
+      "trace": [
+        {
+          "round": 1,
+          "tool_calls": [
             {
               "tool": "get_related_notes",
               "arguments": {
                 "title": "Transformers",
-                "direction": "incoming"
+                "direction": "outgoing"
               },
               "result_summary": {
+                "outgoing": [
+                  {
+                    "path": "research/Self_Attention.md",
+                    "title": "Self Attention",
+                    "tags": "attention,transformer",
+                    "created": "2026-01-14T08:15:00",
+                    "modified": "2026-01-14T08:15:00",
+                    "folder": "research",
+                    "links": "Transformers,Attention_Mechanisms"
+                  },
+                  {
+                    "path": "research/Attention_Mechanisms.md",
+                    "title": "Attention Mechanisms",
+                    "tags": "attention,deep-learning",
+                    "created": "2026-01-12T11:00:00",
+                    "modified": "2026-01-20T16:45:00",
+                    "folder": "research",
+                    "links": "Transformers,Self_Attention"
+                  },
+                  {
+                    "path": "projects/Paper_Recommender.md",
+                    "title": "Paper Recommender",
+                    "tags": "project,python,machine-learning",
+                    "created": "2026-01-08T10:00:00",
+                    "modified": "2026-01-19T13:00:00",
+                    "folder": "projects",
+                    "links": "Web_Scraper,Dataset_Cleaner,Transformers,Experiment_Tracker"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "tool_calls": [],
+          "final_response": "RESULT_PATHS: [\"research/Self_Attention.md\", \"research/Attention_Mechanisms.md\"]"
+        }
+      ],
+      "total_input_tokens": 3034,
+      "total_output_tokens": 45,
+      "total_tokens": 3079,
+      "latency_seconds": 1.258,
+      "rounds": 2,
+      "num_tool_calls": 1,
+      "exact_match": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "query_id": "q17",
+      "category": "graph_based",
+      "query": "What notes in my vault are connected to my reinforcement learning research, either referencing it or being referenced by it?",
+      "expected_notes": [
+        "meetings/Advisor_Meeting_Jan17.md",
+        "meetings/Paper_Reading_Group_Feb10.md",
+        "meetings/Thesis_Committee_Jan30.md",
+        "research/CNN_Architecture.md",
+        "research/Federated_Learning.md",
+        "research/Optimization_Methods.md"
+      ],
+      "extracted_notes": [
+        "meetings/Advisor_Meeting_Jan17.md",
+        "meetings/Paper_Reading_Group_Feb10.md",
+        "meetings/Thesis_Committee_Jan30.md",
+        "research/CNN_Architecture.md",
+        "research/Federated_Learning.md",
+        "research/Optimization_Methods.md"
+      ],
+      "response": "RESULT_PATHS: [\"research/Optimization_Methods.md\", \"research/Federated_Learning.md\", \"research/CNN_Architecture.md\", \"meetings/Paper_Reading_Group_Feb10.md\", \"meetings/Thesis_Committee_Jan30.md\", \"meetings/Advisor_Meeting_Jan17.md\"]",
+      "tool_calls": [
+        {
+          "tool": "get_related_notes",
+          "arguments": {
+            "title": "Reinforcement Learning"
+          }
+        }
+      ],
+      "trace": [
+        {
+          "round": 1,
+          "tool_calls": [
+            {
+              "tool": "get_related_notes",
+              "arguments": {
+                "title": "Reinforcement Learning"
+              },
+              "result_summary": {
+                "outgoing": [
+                  {
+                    "path": "research/CNN_Architecture.md",
+                    "title": "CNN Architecture",
+                    "tags": "deep-learning,computer-vision",
+                    "created": "2026-01-08T10:00:00",
+                    "modified": "2026-01-15T11:30:00",
+                    "folder": "research",
+                    "links": "Reinforcement_Learning"
+                  }
+                ],
                 "incoming": [
-                  {
-                    "path": "research/Graph_Neural_Networks.md",
-                    "title": "Graph Neural Networks",
-                    "tags": "deep-learning,graph-ml",
-                    "created": "2026-02-02T09:30:00",
-                    "modified": "2026-02-05T10:00:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/Word_Embeddings.md",
-                    "title": "Word Embeddings",
-                    "tags": "",
-                    "created": "2026-01-09T16:00:00",
-                    "modified": "2026-01-16T10:30:00",
-                    "folder": "research"
-                  },
                   {
                     "path": "research/Optimization_Methods.md",
                     "title": "Optimization Methods",
                     "tags": "deep-learning,optimization,math",
                     "created": "2026-01-29T09:00:00",
                     "modified": "2026-02-04T16:00:00",
+                    "folder": "research"
+                  },
+                  {
+                    "path": "research/Federated_Learning.md",
+                    "title": "Federated Learning",
+                    "tags": "machine-learning,privacy",
+                    "created": "2026-02-06T11:00:00",
+                    "modified": "2026-02-06T11:00:00",
+                    "folder": "research"
+                  },
+                  {
+                    "path": "research/CNN_Architecture.md",
+                    "title": "CNN Architecture",
+                    "tags": "deep-learning,computer-vision",
+                    "created": "2026-01-08T10:00:00",
+                    "modified": "2026-01-15T11:30:00",
+                    "folder": "research"
+                  },
+                  {
+                    "path": "meetings/Paper_Reading_Group_Feb10.md",
+                    "title": "Paper Reading Group Feb10",
+                    "tags": "meeting,reading-group",
+                    "created": "2026-02-10T16:00:00",
+                    "modified": "2026-02-10T17:00:00",
+                    "folder": "meetings"
+                  },
+                  {
+                    "path": "meetings/Thesis_Committee_Jan30.md",
+                    "title": "Thesis Committee Jan30",
+                    "tags": "meeting,advisor,thesis",
+                    "created": "2026-01-30T10:00:00",
+                    "modified": "2026-01-30T11:30:00",
+                    "folder": "meetings"
+                  },
+                  {
+                    "path": "meetings/Advisor_Meeting_Jan17.md",
+                    "title": "Advisor Meeting Jan17",
+                    "tags": "meeting,advisor",
+                    "created": "2026-01-17T14:00:00",
+                    "modified": "2026-01-17T15:00:00",
+                    "folder": "meetings"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "tool_calls": [],
+          "final_response": "RESULT_PATHS: [\"research/Optimization_Methods.md\", \"research/Federated_Learning.md\", \"research/CNN_Architecture.md\", \"meetings/Paper_Reading_Group_Feb10.md\", \"meetings/Thesis_Committee_Jan30.md\", \"meetings/Advisor_Meeting_Jan17.md\"]"
+        }
+      ],
+      "total_input_tokens": 3369,
+      "total_output_tokens": 92,
+      "total_tokens": 3461,
+      "latency_seconds": 2.145,
+      "rounds": 2,
+      "num_tool_calls": 1,
+      "exact_match": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "query_id": "q18",
+      "category": "graph_based",
+      "query": "Which of my project notes grew out of or are related to my attention mechanism research?",
+      "expected_notes": [
+        "projects/Chatbot_Prototype.md",
+        "projects/Paper_Recommender.md",
+        "projects/Text_Summarizer.md"
+      ],
+      "extracted_notes": [
+        "projects/Chatbot_Prototype.md"
+      ],
+      "response": "RESULT_PATHS: [\"projects/Chatbot_Prototype.md\"]",
+      "tool_calls": [
+        {
+          "tool": "get_related_notes",
+          "arguments": {
+            "title": "Attention Mechanisms",
+            "direction": "incoming"
+          }
+        }
+      ],
+      "trace": [
+        {
+          "round": 1,
+          "tool_calls": [
+            {
+              "tool": "get_related_notes",
+              "arguments": {
+                "title": "Attention Mechanisms",
+                "direction": "incoming"
+              },
+              "result_summary": {
+                "incoming": [
+                  {
+                    "path": "research/Word_Embeddings.md",
+                    "title": "Word Embeddings",
+                    "tags": "",
+                    "created": "2026-01-09T16:00:00",
+                    "modified": "2026-01-16T10:30:00",
                     "folder": "research"
                   },
                   {
@@ -1532,35 +1427,27 @@
                     "folder": "research"
                   },
                   {
-                    "path": "research/GPT.md",
-                    "title": "GPT",
-                    "tags": "nlp,deep-learning,transformer",
-                    "created": "2026-01-25T11:00:00",
-                    "modified": "2026-02-01T09:45:00",
+                    "path": "research/Graph_Neural_Networks.md",
+                    "title": "Graph Neural Networks",
+                    "tags": "deep-learning,graph-ml",
+                    "created": "2026-02-02T09:30:00",
+                    "modified": "2026-02-05T10:00:00",
                     "folder": "research"
                   },
                   {
-                    "path": "research/BERT.md",
-                    "title": "BERT",
-                    "tags": "nlp,deep-learning,transformer",
-                    "created": "2026-01-23T10:00:00",
-                    "modified": "2026-01-29T15:30:00",
+                    "path": "research/Transformers.md",
+                    "title": "Transformers",
+                    "tags": "transformer,attention,deep-learning",
+                    "created": "2026-01-10T09:30:00",
+                    "modified": "2026-01-18T14:22:00",
                     "folder": "research"
                   },
                   {
-                    "path": "research/Attention_Mechanisms.md",
-                    "title": "Attention Mechanisms",
-                    "tags": "attention,deep-learning",
-                    "created": "2026-01-12T11:00:00",
-                    "modified": "2026-01-20T16:45:00",
-                    "folder": "research"
-                  },
-                  {
-                    "path": "research/Mixture_of_Experts.md",
-                    "title": "Mixture of Experts",
-                    "tags": "deep-learning,optimization",
-                    "created": "2026-02-04T10:30:00",
-                    "modified": "2026-02-04T10:30:00",
+                    "path": "research/Diffusion_Models.md",
+                    "title": "Diffusion Models",
+                    "tags": "deep-learning,generative-ai",
+                    "created": "2026-01-31T15:00:00",
+                    "modified": "2026-01-31T15:00:00",
                     "folder": "research"
                   },
                   {
@@ -1572,12 +1459,20 @@
                     "folder": "research"
                   },
                   {
-                    "path": "projects/Paper_Recommender.md",
-                    "title": "Paper Recommender",
-                    "tags": "project,python,machine-learning",
-                    "created": "2026-01-08T10:00:00",
-                    "modified": "2026-01-19T13:00:00",
+                    "path": "projects/Chatbot_Prototype.md",
+                    "title": "Chatbot Prototype",
+                    "tags": "project,nlp",
+                    "created": "2026-01-13T14:00:00",
+                    "modified": "2026-01-21T10:30:00",
                     "folder": "projects"
+                  },
+                  {
+                    "path": "meetings/Paper_Reading_Group_Jan14.md",
+                    "title": "Paper Reading Group Jan14",
+                    "tags": "meeting,reading-group",
+                    "created": "2026-01-14T16:00:00",
+                    "modified": "2026-01-14T17:00:00",
+                    "folder": "meetings"
                   }
                 ]
               }
@@ -1587,19 +1482,19 @@
         {
           "round": 2,
           "tool_calls": [],
-          "final_response": "Here are the project notes related to your attention mechanism research:\n\n* projects/Chatbot_Prototype.md\n* projects/Paper_Recommender.md\nRESULT_PATHS: [\"projects/Chatbot_Prototype.md\", \"projects/Paper_Recommender.md\"]"
+          "final_response": "RESULT_PATHS: [\"projects/Chatbot_Prototype.md\"]"
         }
       ],
-      "total_input_tokens": 5729,
-      "total_output_tokens": 104,
-      "total_tokens": 5833,
-      "latency_seconds": 1.222,
+      "total_input_tokens": 3416,
+      "total_output_tokens": 37,
+      "total_tokens": 3453,
+      "latency_seconds": 1.784,
       "rounds": 2,
-      "num_tool_calls": 2,
+      "num_tool_calls": 1,
       "exact_match": false,
       "precision": 1.0,
-      "recall": 0.6667,
-      "f1": 0.8
+      "recall": 0.3333,
+      "f1": 0.5
     },
     {
       "query_id": "q19",
@@ -1693,10 +1588,10 @@
           "final_response": "RESULT_PATHS: [\"research/GAN_Architecture.md\", \"research/Transfer_Learning.md\", \"research/Reinforcement_Learning.md\", \"projects/Image_Classifier.md\"]"
         }
       ],
-      "total_input_tokens": 4605,
+      "total_input_tokens": 3191,
       "total_output_tokens": 64,
-      "total_tokens": 4669,
-      "latency_seconds": 1.773,
+      "total_tokens": 3255,
+      "latency_seconds": 1.296,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -1744,7 +1639,7 @@
         "research/Transfer_Learning.md",
         "research/Transformers.md"
       ],
-      "response": "The following notes reference the \"Paper Recommender\" project:\n\n*   projects/Image_Classifier.md\n*   projects/Sentiment_Analyzer.md\n*   projects/Benchmark_Suite.md\n*   research/GPT.md\n*   research/Graph_Neural_Networks.md\n*   research/BERT.md\n*   research/Contrastive_Learning.md\n*   research/Transformers.md\n*   research/Transfer_Learning.md\n*   projects/Experiment_Tracker.md\n\nRESULT_PATHS: [\"projects/Image_Classifier.md\", \"projects/Sentiment_Analyzer.md\", \"projects/Benchmark_Suite.md\", \"research/GPT.md\", \"research/Graph_Neural_Networks.md\", \"research/BERT.md\", \"research/Contrastive_Learning.md\", \"research/Transformers.md\", \"research/Transfer_Learning.md\", \"projects/Experiment_Tracker.md\"]",
+      "response": "RESULT_PATHS: [\"projects/Image_Classifier.md\", \"projects/Sentiment_Analyzer.md\", \"projects/Benchmark_Suite.md\", \"research/GPT.md\", \"research/Graph_Neural_Networks.md\", \"research/BERT.md\", \"research/Contrastive_Learning.md\", \"research/Transformers.md\", \"research/Transfer_Learning.md\", \"projects/Experiment_Tracker.md\"]",
       "tool_calls": [
         {
           "tool": "get_related_notes",
@@ -1854,13 +1749,13 @@
         {
           "round": 2,
           "tool_calls": [],
-          "final_response": "The following notes reference the \"Paper Recommender\" project:\n\n*   projects/Image_Classifier.md\n*   projects/Sentiment_Analyzer.md\n*   projects/Benchmark_Suite.md\n*   research/GPT.md\n*   research/Graph_Neural_Networks.md\n*   research/BERT.md\n*   research/Contrastive_Learning.md\n*   research/Transformers.md\n*   research/Transfer_Learning.md\n*   projects/Experiment_Tracker.md\n\nRESULT_PATHS: [\"projects/Image_Classifier.md\", \"projects/Sentiment_Analyzer.md\", \"projects/Benchmark_Suite.md\", \"research/GPT.md\", \"research/Graph_Neural_Networks.md\", \"research/BERT.md\", \"research/Contrastive_Learning.md\", \"research/Transformers.md\", \"research/Transfer_Learning.md\", \"projects/Experiment_Tracker.md\"]"
+          "final_response": "RESULT_PATHS: [\"projects/Image_Classifier.md\", \"projects/Sentiment_Analyzer.md\", \"projects/Benchmark_Suite.md\", \"research/GPT.md\", \"research/Graph_Neural_Networks.md\", \"research/BERT.md\", \"research/Contrastive_Learning.md\", \"research/Transformers.md\", \"research/Transfer_Learning.md\", \"projects/Experiment_Tracker.md\"]"
         }
       ],
-      "total_input_tokens": 4995,
-      "total_output_tokens": 227,
-      "total_tokens": 5222,
-      "latency_seconds": 1.59,
+      "total_input_tokens": 3578,
+      "total_output_tokens": 116,
+      "total_tokens": 3694,
+      "latency_seconds": 1.566,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -1889,8 +1784,8 @@
         {
           "tool": "get_related_notes",
           "arguments": {
-            "direction": "outgoing",
-            "title": "Chatbot Prototype"
+            "title": "Chatbot Prototype",
+            "direction": "outgoing"
           }
         },
         {
@@ -1915,8 +1810,8 @@
             {
               "tool": "get_related_notes",
               "arguments": {
-                "direction": "outgoing",
-                "title": "Chatbot Prototype"
+                "title": "Chatbot Prototype",
+                "direction": "outgoing"
               },
               "result_summary": {
                 "outgoing": [
@@ -2021,10 +1916,10 @@
           "final_response": "RESULT_PATHS: [\"research/Self_Attention.md\", \"research/Attention_Mechanisms.md\", \"projects/Paper_Recommender.md\", \"research/Transformers.md\"]"
         }
       ],
-      "total_input_tokens": 7249,
+      "total_input_tokens": 5134,
       "total_output_tokens": 110,
-      "total_tokens": 7359,
-      "latency_seconds": 1.661,
+      "total_tokens": 5244,
+      "latency_seconds": 2.594,
       "rounds": 3,
       "num_tool_calls": 3,
       "exact_match": true,
@@ -2042,15 +1937,15 @@
         "meetings/Paper_Reading_Group_Feb10.md"
       ],
       "extracted_notes": [
-        "meetings/Advisor_Meeting_Feb07.md",
-        "meetings/Advisor_Meeting_Jan24.md"
+        "meetings/Advisor_Meeting_Jan24.md",
+        "meetings/Paper_Reading_Group_Feb10.md"
       ],
-      "response": "RESULT_PATHS: [\"meetings/Advisor_Meeting_Jan24.md\", \"meetings/Advisor_Meeting_Feb07.md\"]",
+      "response": "RESULT_PATHS: [\"meetings/Paper_Reading_Group_Feb10.md\", \"meetings/Advisor_Meeting_Jan24.md\"]",
       "tool_calls": [
         {
           "tool": "search_notes",
           "arguments": {
-            "query": "BERT meeting"
+            "query": "BERT"
           }
         }
       ],
@@ -2061,13 +1956,19 @@
             {
               "tool": "search_notes",
               "arguments": {
-                "query": "BERT meeting"
+                "query": "BERT"
               },
               "result_summary": [
-                "meetings/Advisor_Meeting_Jan24.md",
-                "meetings/Advisor_Meeting_Feb07.md",
+                "research/BERT.md",
+                "daily/2026-01-23.md",
+                "meetings/Paper_Reading_Group_Feb10.md",
+                "research/Knowledge_Distillation.md",
                 "daily/2026-01-24.md",
-                "daily/2026-02-09.md"
+                "research/GPT.md",
+                "research/Tokenization.md",
+                "meetings/Advisor_Meeting_Jan24.md",
+                "daily/2026-01-25.md",
+                "projects/Sentiment_Analyzer.md"
               ]
             }
           ]
@@ -2075,13 +1976,13 @@
         {
           "round": 2,
           "tool_calls": [],
-          "final_response": "RESULT_PATHS: [\"meetings/Advisor_Meeting_Jan24.md\", \"meetings/Advisor_Meeting_Feb07.md\"]"
+          "final_response": "RESULT_PATHS: [\"meetings/Paper_Reading_Group_Feb10.md\", \"meetings/Advisor_Meeting_Jan24.md\"]"
         }
       ],
-      "total_input_tokens": 4486,
-      "total_output_tokens": 46,
-      "total_tokens": 4532,
-      "latency_seconds": 1.162,
+      "total_input_tokens": 3586,
+      "total_output_tokens": 47,
+      "total_tokens": 3633,
+      "latency_seconds": 1.227,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": false,
@@ -2145,10 +2046,10 @@
           "final_response": "RESULT_PATHS: []"
         }
       ],
-      "total_input_tokens": 4983,
+      "total_input_tokens": 3569,
       "total_output_tokens": 20,
-      "total_tokens": 5003,
-      "latency_seconds": 0.904,
+      "total_tokens": 3589,
+      "latency_seconds": 1.411,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": false,
@@ -2214,10 +2115,10 @@
           "final_response": "RESULT_PATHS: [\"projects/Sentiment_Analyzer.md\", \"projects/Text_Summarizer.md\", \"projects/Multilingual_Classifier.md\", \"projects/RAG_System.md\", \"projects/Prompt_Optimizer.md\"]"
         }
       ],
-      "total_input_tokens": 4556,
+      "total_input_tokens": 3143,
       "total_output_tokens": 70,
-      "total_tokens": 4626,
-      "latency_seconds": 1.185,
+      "total_tokens": 3213,
+      "latency_seconds": 1.476,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
@@ -2285,10 +2186,10 @@
           "final_response": "RESULT_PATHS: [\"research/Knowledge_Distillation.md\", \"research/Mixture_of_Experts.md\", \"projects/Active_Learning_System.md\", \"projects/Prompt_Optimizer.md\", \"daily/2026-02-04.md\", \"daily/2026-02-05.md\", \"meetings/Paper_Reading_Group_Feb04.md\"]"
         }
       ],
-      "total_input_tokens": 4802,
+      "total_input_tokens": 3384,
       "total_output_tokens": 135,
-      "total_tokens": 4937,
-      "latency_seconds": 1.667,
+      "total_tokens": 3519,
+      "latency_seconds": 1.424,
       "rounds": 2,
       "num_tool_calls": 1,
       "exact_match": true,
