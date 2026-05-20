@@ -1,4 +1,16 @@
-# SWE 580 — Tool Granularity Project: Setup & Usage Guide
+# SWE 580 — Tool Granularity Project
+
+## Submission
+
+| | File |
+|---|---|
+| Tool configs | [config_a_tools.json](config_a_tools.json) · [config_b_tools.json](config_b_tools.json) |
+| System prompts | [config_a_prompt.txt](config_a_prompt.txt) · [config_b_prompt.txt](config_b_prompt.txt) |
+| Results | [results/final/config_a_20260516_215635.json](results/final/config_a_20260516_215635.json) · [results/final/config_b_20260516_215635.json](results/final/config_b_20260516_215635.json) · [results/final/comparison_20260516_215635.json](results/final/comparison_20260516_215635.json) |
+| Report | [PDF]() |
+
+---
+
 
 ## Files Overview
 
