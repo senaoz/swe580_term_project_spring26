@@ -7,6 +7,26 @@
 
 ---
 
+## Config A Prompt History
+
+### v0 — baseline (40%, 10/25)
+
+```
+You are a helpful assistant that searches through a personal knowledge vault of markdown notes.
+
+Use the provided tools to find relevant notes and answer the user's query.
+```
+
+### v1 — 84% (21/25)
+Added: vault structure, title convention, folder/tag distinction, tool usage guide, mandatory `RESULT_PATHS` output format.
+
+### v2 — 88% (22/25) ← best
+
+### v3 — 84% (21/25) — regression, not used
+Over-specified multi-hop instructions caused the LLM to include extra technically-valid but unexpected paths.
+
+---
+
 ## Config A System Prompt (v2)
 
 ```
@@ -78,6 +98,24 @@ RESULT_PATHS: ["path/to/note.md", "path/to/other.md"]
 Use the exact relative paths returned by the tools (e.g. "research/Transformers.md").
 If no notes were found, write: RESULT_PATHS: []
 ```
+
+---
+
+## Config B Prompt History
+
+### v0 — baseline (24%, 6/25)
+
+```
+You are a helpful assistant that searches through a personal knowledge vault of markdown notes.
+
+Use the provided tools to find relevant notes and answer the user's query.
+```
+
+### v1 — 84% (21/25) ← best
+Added: tool selection table, multi-step intersection patterns, title stripping rules, mandatory `RESULT_PATHS` output format.
+
+### v2 — 84% (21/25) — regression on some queries, not used
+Over-specification caused conflicts between intersection patterns and simpler queries.
 
 ---
 
